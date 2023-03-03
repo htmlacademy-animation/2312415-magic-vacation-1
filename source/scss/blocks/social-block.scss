@@ -89,7 +89,7 @@
   margin-top: 1.5rem;
   opacity: 0;
   pointer-events: none;
-  transition-duration: 400ms;
+  transition: 1s;
 
   @media (min-width: $stop-scaling) {
     margin-top: 15px;
@@ -169,23 +169,18 @@
   color: $c-light;
   border: 2px solid transparent;
   border-radius: 50%;
-  transform: translateY(0.8rem);
-  transition: opacity 0.5s, transform 0s ease 0.5s;
   opacity: 0;
 
   .social-block--active & {
-    opacity: 1;
-    transform: translateY(0);
-    transition: transform 0.5s, opacity 0.8s;
+    animation: fadeInSocialLink 0.35s ease-out forwards;
 
     &--insta {
-      transition-delay: 0.15s;
+      animation-delay: 0.15s;
     }
     &--vk {
-      transition-delay: 0.3s;
+      animation-delay: 0.30s;
     }
   }
-
 
   @media (min-width: $stop-scaling) {
     width: 40px;
@@ -201,7 +196,6 @@
     color: $c-light;
     background-color: $c-dark;
   }
-
 
   &:hover {
     color: $c-purple;

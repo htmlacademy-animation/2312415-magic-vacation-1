@@ -23,3 +23,27 @@
     opacity: 1;
   }
 }
+
+@keyframes fadeInSocialLink {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  100% { 
+    opacity: 1;
+  }
+}
+
+@keyframes test {
+  0% {
+    background-color: red;
+    color: red;
+  }
+  100% { 
+    background-color: blue;
+    color: blue;
+  }
+}
