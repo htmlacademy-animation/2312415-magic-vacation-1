@@ -89,6 +89,7 @@
   margin-top: 1.5rem;
   opacity: 0;
   pointer-events: none;
+  transition: 1s;
 
   @media (min-width: $stop-scaling) {
     margin-top: 15px;
@@ -168,6 +169,18 @@
   color: $c-light;
   border: 2px solid transparent;
   border-radius: 50%;
+  opacity: 0;
+
+  .social-block--active & {
+    animation: fadeInSocialLink 0.35s ease-out forwards;
+
+    &--insta {
+      animation-delay: 0.15s;
+    }
+    &--vk {
+      animation-delay: 0.30s;
+    }
+  }
 
   @media (min-width: $stop-scaling) {
     width: 40px;
